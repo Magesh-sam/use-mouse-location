@@ -1,0 +1,36 @@
+{
+  "name": "use-mouse-location",
+  "private": true,
+  "version": "1.0.0",
+  "description": "react custom hook to get the cursor coordinates",
+  "main": "index.js",
+  "keywords": [
+    "mouse",
+    "location",
+    "coordinates",
+    "mouse-coordinates",
+    "mouse-location",
+    "cursor",
+    "cursorPosition",
+    "cursor-coordinates",
+    "cursorPosition"
+  ],
+  "exports": {
+    "default": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "mageshkannan",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11"
+  }
+}

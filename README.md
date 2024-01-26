@@ -3,7 +3,7 @@
 
 ## Description
 
-   This is a simple react hook form returns the cursor coordinates.
+   This is a simple react hook that returns the cursor coordinates.
 
 ### How to install
 

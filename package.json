@@ -2,7 +2,7 @@
   "name": "use-mouse-location",
   "version": "1.0.0",
   "description": "react custom hook to get the cursor coordinates",
-  "main": "index.js",
+  "main": "/dist",
   "keywords": [
     "mouse",
     "location",
@@ -14,11 +14,15 @@
     "cursor-coordinates",
     "cursorPosition"
   ],
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build"
+  },
   "exports": {
-    "default": "./index.js"
+    "default": "./dist/index.js"
   },
   "files": [
-    "index.js"
+    "/dist"
   ],
   "engines": {
     "node": ">=18"
@@ -32,6 +36,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
     "esbuild": "^0.19.11"
   },
   "dependencies": {

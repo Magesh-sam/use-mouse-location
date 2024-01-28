@@ -1,8 +1,9 @@
 {
   "name": "use-mouse-location",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "react custom hook to get the cursor coordinates",
-  "main": "/dist",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "mouse",
     "location",
@@ -15,15 +16,8 @@
     "cursorPosition"
   ],
   "scripts": {
-    "build": "babel src -d dist",
-    "prepublishOnly": "npm run build"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
-  "exports": {
-    "default": "./dist/index.js"
-  },
-  "files": [
-    "/dist"
-  ],
   "engines": {
     "node": ">=18"
   },
@@ -39,12 +33,17 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/preset-env": "^7.23.9",
-    "@babel/preset-react": "^7.23.3",
-    "esbuild": "^0.19.11"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/react": "^18.2.48",
+    "react": "^18.2.0",
+    "rollup": "^4.9.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "use-mouse-location": "^0.0.1"
+    "use-mouse-location": "^0.0.7"
   }
 }
